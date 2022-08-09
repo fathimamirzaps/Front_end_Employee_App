@@ -14,55 +14,55 @@ export const baseApi = createApi({
 }),
   refetchOnMountOrArgChange : true,
   tagTypes : ['Employee'],
-  endpoints: (builder) => ({
-    getEmployee: builder.query({
-      query: () => "employee",
-      providesTags:['Employee']
-    }),
-    getEmployeeById : builder.query({
-      query: (id) => ({
-        url: `employee/${id}`,
+  endpoints: () => ({}),
+    // getEmployee: builder.query({
+    //   query: () => "employee",
+    //   providesTags:['Employee']
+    // }),
+    // getEmployeeById : builder.query({
+    //   query: (id) => ({
+    //     url: `employee/${id}`,
         
-      }),
+    //   }),
 
-    }),
-    deleteEmployeeById : builder.mutation({
-      query: (id) => ({
-        url:`employee/${id}`,
-        method :'DELETE'
+    // }),
+    // deleteEmployeeById : builder.mutation({
+    //   query: (id) => ({
+    //     url:`employee/${id}`,
+    //     method :'DELETE'
 
-      }),
-      invalidatesTags:['Employee'],
+    //   }),
+    //   invalidatesTags:['Employee'],
 
-    }),
-   login: builder.mutation({
-    query:(payload) => ({
-      url:"employee/login",
-      method:"POST",
-      body : payload
-    }),
-   }),
-    updateEmployee: builder.mutation({
-      query: ({id,...payload}) => ({
-        url:`employee/${id}`,
-        method : 'PUT',
-        body: payload,
-      }),
+    // }),
+  //  login: builder.mutation({
+  //   query:(payload) => ({
+  //     url:"employee/login",
+  //     method:"POST",
+  //     body : payload
+  //   }),
+  //  }),
+    // updateEmployee: builder.mutation({
+    //   query: ({id,...payload}) => ({
+    //     url:`employee/${id}`,
+    //     method : 'PUT',
+    //     body: payload,
+    //   }),
 
-    }),
-    createEmployee: builder.mutation({
+    // }),
+    // createEmployee: builder.mutation({
       
-      query: (payload) => ({
-        url: "employee",
-        method: 'POST',
-        body: payload,
-      }),
-      })
-  }),
+    //   query: (payload) => ({
+    //     url: "employee",
+    //     method: 'POST',
+    //     body: payload,
+    //   }),
+    //   })
+
 });
   
   
     
 
 
-export const { useGetEmployeeQuery , useCreateEmployeeMutation,useDeleteEmployeeByIdMutation,useGetEmployeeByIdQuery,useUpdateEmployeeMutation,useLoginMutation} = baseApi;
+export const {} = baseApi;

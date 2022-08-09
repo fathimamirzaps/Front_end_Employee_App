@@ -1,7 +1,7 @@
-import SideBar from "../components/Sidebar";
-import '../style/style.css';
+import SideBar from "../../components/Sidebar";
+import './style.css';
 import { useNavigate } from "react-router-dom";
-import { useDeleteEmployeeByIdMutation, useGetEmployeeQuery } from "../services/api";
+import { useDeleteEmployeeByIdMutation, useGetEmployeeQuery } from "./api";
 import {MdOutlineAdd, MdOutlineDelete,MdOutlineEdit} from "react-icons/md";
 
 const EmployeeList = () => {

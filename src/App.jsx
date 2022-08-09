@@ -3,7 +3,7 @@ import Button from './components/Button';
 import InputField from './components/InputField';
 import { useEffect, useState } from 'react';
 import TextField from './components/TextField';
-import CreateEmployee from './pages/CreateEmployee';
+import CreateEmployee from './pages/create-employee/CreateEmployee';
 
 function App() {
 //   const[userName,setuserName] = useState('dhruv');

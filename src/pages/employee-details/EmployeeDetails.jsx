@@ -1,7 +1,8 @@
-import SideBar from "../components/Sidebar";
+import SideBar from "../../components/Sidebar";
 import { useNavigate, useParams } from "react-router-dom";
-import { useGetEmployeeByIdQuery } from "../services/api";
+import { useGetEmployeeByIdQuery } from "./api";
 import {MdOutlineEdit} from "react-icons/md";
+import './style.css';
 
 const EmployeeDetails = () => {
     const params = useParams();

@@ -1,11 +1,11 @@
-import LoginPic from "../assets/login.png";
-import Logo from '../assets/kv logo.png';
-import InputField from "../components/InputField";
+import LoginPic from "../../assets/login.png";
+import Logo from '../../assets/kv logo.png';
+import InputField from "../../components/InputField";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useLoginMutation } from "../services/api";
-import {setStorage} from "../services/utils";
-import "../style/style.css"
+import { useLoginMutation } from "./api";
+import {setStorage} from "../../services/utils";
+import "./style.css"
 
 const Login = () => {
     const [login,result] = useLoginMutation();
