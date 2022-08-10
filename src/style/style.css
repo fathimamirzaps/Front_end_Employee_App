@@ -324,3 +324,13 @@ justify-content: space-around;
     width: 100%;
     padding: 100px;
   } */
+
+  #logout{
+    background-color: #03AEEE;
+    margin-top: 230%;
+    margin-left: 25%;
+    width: 150px;
+    /* border-radius: 15%; */
+    height: 40px;
+    color: white;
+}
