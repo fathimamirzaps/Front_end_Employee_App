@@ -330,7 +330,7 @@ justify-content: space-around;
     margin-top: 230%;
     margin-left: 25%;
     width: 150px;
-    /* border-radius: 15%; */
+    border-radius: 5%;
     height: 40px;
     color: white;
 }
